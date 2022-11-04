@@ -23,16 +23,18 @@
     
   
 </div>
-<button onclick="showMessage ()">
+
+    <div class="icons">
+<button class="icon-items" onclick="showMessage ()">
     Сапфир
 </button>
-<button id="second" ondblclick="showDoubleMessage()">
+<button id="second" class="icon-items" ondblclick="showDoubleMessage()">
   Изумруд
 </button>
-<button id="second" ondblclick="showRubin()">
+<button class="icon-items" ondblclick="showRubin()">
     Рубин
 </button>
-
+</div>
 <div class="fleX-box " >
     <div id="kor" class="icono-items" style="background-image:url(img/almaz.jpg);">
    <h1> Sapphire</h1>
@@ -96,6 +98,13 @@ background-image: url(img/mramor.png);
          padding:250px 200px;
          border:  solid#000;
          margin: 10px;}
+           .icons{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
 
     
     @media(max-width:500px){
@@ -174,5 +183,4 @@ function showRubin () {
     document.getElementById("rubis").style.backgroundImage ="url(img/ringrubis.jpg)";  
 }
         </script>
-
 
